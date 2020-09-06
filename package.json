@@ -2,11 +2,10 @@
   "name": "js-libp2p-ilp-stream",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "setupExample": "npm install -g moneyd moneyd-uplink-xrp && moneyd --testnet xrp:configure && moneyd --testnet xrp:start",
-    "example": "node example/example.js"
+    "start": "node src/index.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +19,8 @@
   "homepage": "https://github.com/HexaField/js-libp2p-ilp-stream#readme",
   "dependencies": {
     "ilp-plugin": "^3.5.2",
+    "ilp-plugin-btp": "^1.4.2",
+    "ilp-plugin-mini-accounts": "^4.2.0",
     "ilp-protocol-stream": "^2.6.4"
   }
 }
