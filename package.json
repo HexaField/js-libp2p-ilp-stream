@@ -1,22 +1,11 @@
 {
-  "name": "js-libp2p-ilp-stream",
+  "name": "ilp-stream-network",
   "version": "1.0.0",
-  "description": "",
+  "license": "MIT",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/index.js"
+    "test": "node test.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/HexaField/js-libp2p-ilp-stream.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/HexaField/js-libp2p-ilp-stream/issues"
-  },
-  "homepage": "https://github.com/HexaField/js-libp2p-ilp-stream#readme",
   "dependencies": {
     "ilp-plugin": "^3.5.2",
     "ilp-plugin-btp": "^1.4.2",
