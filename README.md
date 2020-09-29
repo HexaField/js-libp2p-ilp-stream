@@ -1,6 +1,10 @@
-# js-libp2p-ilp-stream
+# ilp-stream-network
 
-A transport for libp2p using ILP's STREAM
+A simple p2p networking wrapper for ILP's STREAM protocol
 
 https://github.com/interledgerjs/ilp-protocol-stream
-https://github.com/libp2p/js-libp2p-interfaces/tree/master/src/transport
+
+## Proposed API
+
+- pubsub/floodsub
+- node messaging
