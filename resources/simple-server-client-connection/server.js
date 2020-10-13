@@ -16,9 +16,12 @@ async function server (port) {
         console.log('new connection')
         connection.on('stream', (stream) => {
             console.log('new stream')
-            stream.setReceiveMax(10000)
+            stream.setReceiveMax(10)
             stream.on('money', (amount) => { 
-                // process.stdout.write(amount + ',') 
+                process.stdout.write('Received: ' + amount + '\n') 
+            })
+            stream.on('data', chunk => {
+                console.log(`Client says: ${chunk.toString('utf8')}`)
             })
         })
     })

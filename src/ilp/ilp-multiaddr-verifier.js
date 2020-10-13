@@ -1,0 +1,1 @@
+//https://github.com/multiformats/js-mafmt/blob/master/src/index.js

@@ -3,7 +3,7 @@ const { createConnection } = require('ilp-protocol-stream')
 
 async function client (port, info) {
     
-    const BATCH_SIZE = 1000
+    const BATCH_SIZE = 10
     let totalAmount = 0
 
     const client = await makeStreamClient({
@@ -12,6 +12,8 @@ async function client (port, info) {
     }, info)
     const stream = await client.createStream()
     
+    await stream.write('Hello server!')
+
     sendBatch()
 
     function sendBatch () {
@@ -19,7 +21,7 @@ async function client (port, info) {
         .then((elapsed) => {
             console.log('elapsed:', elapsed, 'ms')
             setTimeout(sendBatch, 100)
-            if(totalAmount >= 10000)
+            if(totalAmount >= 10)
                 process.exit(0)
         })
         .catch((err) => console.error('sendTotal error:', err.stack))

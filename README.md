@@ -1,6 +1,6 @@
 # ilp-stream-network
 
-A simple p2p networking wrapper for ILP's STREAM protocol
+A simple peer wrapper for ILP's STREAM protocol
 
 https://github.com/interledgerjs/ilp-protocol-stream
 
@@ -8,3 +8,9 @@ https://github.com/interledgerjs/ilp-protocol-stream
 
 - pubsub/floodsub
 - node messaging
+- transport API for libp2p
+
+## Examples
+
+Basic example to run server & client and show payment
+`node examples/simple-server-client-connection`
